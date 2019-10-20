@@ -82,7 +82,7 @@ it('can add the star name and star symbol properly', async() => {
     let tokenId = 6;
     await instance.createStar('Star6', tokenId, {from: accounts[0]});    
     assert.equal('Reda Star Notary', await instance.name.call());
-    assert.equal('RNS', await instance.symbol.call());
+    assert.equal('RSN', await instance.symbol.call());
 });
 
 it('lets 2 users exchange stars', async() => {
